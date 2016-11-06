@@ -18,6 +18,7 @@ https://docs.scipy.org/doc/numpy/reference/generated/numpy.vectorize.html
 # 使用範例
 
 定義函數
+
 ```
 function y = fun(x)
 if x > 0
@@ -28,6 +29,7 @@ end
 ```
 
 主程式
+
 ```
 x = randn(1000, 1000, 'gpuArray');
 
@@ -38,6 +40,7 @@ g = @() arrayfun(@fun, x);
 ```
 
 確認兩個函數產生的結果是一樣的
+
 ```
 norm((x .^ 2) .* double(x > 0)  - arrayfun(@fun, x), 'fro')
 ```

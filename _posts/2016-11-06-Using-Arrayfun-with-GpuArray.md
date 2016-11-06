@@ -14,7 +14,7 @@ title: Using Arrayfun with GpuArray
 MATLAB提供了arrayfun，我們可以定義單變數的實數函數，並且讓MATLAB改成矩陣函數，其中矩陣的每一個元素都是藉由帶入單變數實數函數得來，這樣可以使程式碼更容易閱讀，速度似乎也比較快。
 
 另外numpy也有類似的方法
-https://docs.scipy.org/doc/numpy/reference/generated/numpy.vectorize.html
+<https://docs.scipy.org/doc/numpy/reference/generated/numpy.vectorize.html>
 
 # 使用範例
 
@@ -47,7 +47,7 @@ norm((x .^ 2) .* double(x > 0)  - arrayfun(@fun, x), 'fro')
 ```
 
 # Reference
-https://www.mathworks.com/help/distcomp/arrayfun.html
-https://www.mathworks.com/help/distcomp/run-element-wise-matlab-code-on-a-gpu.html
+<https://www.mathworks.com/help/distcomp/arrayfun.html>
+<https://www.mathworks.com/help/distcomp/run-element-wise-matlab-code-on-a-gpu.html>
 
 

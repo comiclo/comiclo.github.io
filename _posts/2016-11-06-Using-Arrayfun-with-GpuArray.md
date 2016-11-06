@@ -5,7 +5,7 @@ title: Using Arrayfun with GpuArray
 
 當我們需要把矩陣中的每一個元素都送進一個實數到實數的函數時，應該避免使用for loop。我們可以使用簡單的技巧來達到我們的目的，例如：
 
-```
+```matlab
 (x .^ 2) .* double(x > 0)
 ```
 
@@ -20,7 +20,7 @@ https://docs.scipy.org/doc/numpy/reference/generated/numpy.vectorize.html
 
 定義函數
 
-```
+```matlab
 function y = fun(x)
 if x > 0
     y = x^2;
@@ -31,7 +31,7 @@ end
 
 主程式
 
-```
+```matlab
 x = randn(1000, 1000, 'gpuArray');
 
 f = @() (x .^ 2) .* double(x > 0);

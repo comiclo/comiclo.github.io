@@ -18,7 +18,7 @@ https://docs.scipy.org/doc/numpy/reference/generated/numpy.vectorize.html
 # 使用範例
 
 定義函數
-```matlab
+```
 function y = fun(x)
 if x > 0
     y = x^2;
@@ -28,7 +28,7 @@ end
 ```
 
 主程式
-```matlab
+```
 x = randn(1000, 1000, 'gpuArray');
 
 f = @() (x .^ 2) .* double(x > 0);
@@ -38,7 +38,7 @@ g = @() arrayfun(@fun, x);
 ```
 
 確認兩個函數產生的結果是一樣的
-```matlab
+```
 norm((x .^ 2) .* double(x > 0)  - arrayfun(@fun, x), 'fro')
 ```
 

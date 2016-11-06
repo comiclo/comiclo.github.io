@@ -42,7 +42,7 @@ g = @() arrayfun(@fun, x);
 
 確認兩個函數產生的結果是一樣的
 
-```
+```matlab
 norm((x .^ 2) .* double(x > 0)  - arrayfun(@fun, x), 'fro')
 ```
 

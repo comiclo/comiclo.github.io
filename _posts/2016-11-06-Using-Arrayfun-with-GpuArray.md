@@ -47,7 +47,7 @@ norm((x .^ 2) .* double(x > 0)  - arrayfun(@fun, x), 'fro')
 ```
 
 # Reference
-[](https://www.mathworks.com/help/distcomp/arrayfun.html)
+https://www.mathworks.com/help/distcomp/arrayfun.html
 https://www.mathworks.com/help/distcomp/run-element-wise-matlab-code-on-a-gpu.html
 
 

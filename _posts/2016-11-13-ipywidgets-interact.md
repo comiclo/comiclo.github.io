@@ -13,7 +13,7 @@ import numpy as np
 %matplotlib inline
 ```
 
-先試個簡單的函數$f_{a,b}(x) = a \sin(x) + b \cos(x)$
+先試個簡單的函數$$f_{a,b}(x) = a \sin(x) + b \cos(x)$$
 
 如果我們想要透過改變$a$和$b$來看$f_{a,b}(x)$的圖形
 
